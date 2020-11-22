@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>https://timingf.github.io/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 22 Nov 2020 21:33:23 +0800</lastBuildDate><atom:link href="https://timingf.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog</title>
+      <link>https://timingf.github.io/post/blog/</link>
+      <pubDate>Sun, 22 Nov 2020 21:33:23 +0800</pubDate>
+      
+      <guid>https://timingf.github.io/post/blog/</guid>
+      <description>论文要点：
+​	1.千分尺测量大小并图像分割定位，图像标定，摄像头标定。
+​	2.物体的绝对位置与图像相对位置的插值做逼近，用XX方法逼近，再用亚像素拟合求得像素点圆的中心&amp;mdash;&amp;mdash;&amp;mdash;PCB板的焊点定位
+ 3.单目视觉定位-----了解摄像机的基本参数  ​	4.高斯（/赛贝尔/螺旋线）曲线图像逼近像素，纽曼曲线逼近圆圆心</description>
+    </item>
+    
+  </channel>
+</rss>
