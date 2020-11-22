@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title> // My New Hugo Site</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.78.2" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="John Doe" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://timingf.github.io/css/main.min.88e7083eff65effb7485b6e6f38d10afbec25093a6fac42d734ce9024d3defbd.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="贝叶斯分类器 1. 简介 朴素贝叶斯模型与决策树模型是两个最为广泛的分类模型。贝叶斯分类算法在数据集较大的情况下表现出较高的 ，同时算法本身也比较简单。 朴素贝叶斯方法是在贝叶斯算法的基础上进行了相应的简化，即假定给定目标值时属性之间相互条件独立。 也就是说没有哪个属性变量对于决策结果来说占有着较大的比重，也没有哪个属性变量对于决策结果占有着较小的比重。虽然这个简化方式在一定程度上降低了贝叶斯分类算法的分类效果，但是在实际的应用场景中，极大地简化了贝叶斯方法的复杂性。
+2. 贝叶斯决策论 贝叶斯决策论是概率框架下实施决策的基本方法，它考虑如何基于这些概率和误判损失来选择最优的类别标记。
+3. 基于贝叶斯决策理论的分类方法 优点：在数据较少的情况下仍然有效，可以处理类别问题。
+缺点：对于输入数据的准备方式较为敏感。
+适用数据类型：标称型数据（标称型：标称型目标变量的结果只在有限目标集中取值，如真与假(标称型目标变量主要用于分类)一般在有限的数据中取，而且只存在‘是’和‘否’两种不同的结果）
+ "/>
+
+    <meta property="og:title" content="" />
+<meta property="og:description" content="贝叶斯分类器 1. 简介 朴素贝叶斯模型与决策树模型是两个最为广泛的分类模型。贝叶斯分类算法在数据集较大的情况下表现出较高的 ，同时算法本身也比较简单。 朴素贝叶斯方法是在贝叶斯算法的基础上进行了相应的简化，即假定给定目标值时属性之间相互条件独立。 也就是说没有哪个属性变量对于决策结果来说占有着较大的比重，也没有哪个属性变量对于决策结果占有着较小的比重。虽然这个简化方式在一定程度上降低了贝叶斯分类算法的分类效果，但是在实际的应用场景中，极大地简化了贝叶斯方法的复杂性。
+2. 贝叶斯决策论 贝叶斯决策论是概率框架下实施决策的基本方法，它考虑如何基于这些概率和误判损失来选择最优的类别标记。
+3. 基于贝叶斯决策理论的分类方法 优点：在数据较少的情况下仍然有效，可以处理类别问题。
+缺点：对于输入数据的准备方式较为敏感。
+适用数据类型：标称型数据（标称型：标称型目标变量的结果只在有限目标集中取值，如真与假(标称型目标变量主要用于分类)一般在有限的数据中取，而且只存在‘是’和‘否’两种不同的结果）
+ " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://timingf.github.io/%E7%AC%94%E8%AE%B0/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E6%9C%B4%E7%B4%A0%E8%B4%9D%E5%8F%B6%E6%96%AF/" />
+
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://timingf.github.io/"><img class="app-header-avatar" src="/avatar.jpg" alt="John Doe" /></a>
+      <h1>My New Hugo Site</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula turpis sit amet elit pretium.</p>
+      <div class="app-header-social">
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title"></h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Jan 1, 0001
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          1 min read
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <h1 id="贝叶斯分类器">贝叶斯分类器</h1>
+<h2 id="1-简介">1. 简介</h2>
+<p><strong>朴素贝叶斯模型与决策树模型是两个最为广泛的分类模型</strong>。贝叶斯分类算法在数据集较大的情况下表现出较高的 ，同时算法本身也比较简单。  朴素贝叶斯方法是在<a href="https://baike.baidu.com/item/%E8%B4%9D%E5%8F%B6%E6%96%AF/1405899">贝叶斯</a>算法的基础上进行了相应的简化，即假定给定目标值时属性之间相互条件独立。  也就是说没有哪个属性变量对于决策结果来说占有着较大的比重，也没有哪个属性变量对于决策结果占有着较小的比重。虽然这个简化方式在一定程度上降低了贝叶斯分类算法的分类效果，但是在实际的应用场景中，极大地简化了贝叶斯方法的复杂性。</p>
+<h2 id="2-贝叶斯决策论">2. 贝叶斯决策论</h2>
+<p>贝叶斯决策论是概率框架下实施决策的基本方法，它考虑如何基于这些概率和误判损失来选择最优的类别标记。</p>
+<h2 id="3-基于贝叶斯决策理论的分类方法">3. 基于贝叶斯决策理论的分类方法</h2>
+<p>优点：在数据较少的情况下仍然有效，可以处理类别问题。</p>
+<p>缺点：对于输入数据的准备方式较为敏感。</p>
+<p>适用数据类型：<strong>标称型数据</strong>（<!-- raw HTML omitted -->标称型：标称型目标变量的结果只在有限目标集中取值，如真与假(标称型目标变量主要用于分类)一般在有限的数据中取，而且只存在‘是’和‘否’两种不同的结果<!-- raw HTML omitted -->）</p>
+<h3 id="heading"></h3>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

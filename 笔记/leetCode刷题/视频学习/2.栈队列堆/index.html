@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title> // My New Hugo Site</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.78.2" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="John Doe" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://timingf.github.io/css/main.min.88e7083eff65effb7485b6e6f38d10afbec25093a6fac42d734ce9024d3defbd.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="2.栈、队列、堆 栈与队列 ①栈和队列分别可通过制造两个相同结构模拟对方 ​	&mdash;&mdash;&mdash;&mdash;均在push（）函数内操作，其他不变
+//------------ 用栈模拟队列---------------- void push(x){ stack&lt;int&gt; temp_stack; while(!_data.empty()){ int temp = _data.top(); _data.pop(); temp_stack.push(temp); } temp_stack.push(x); while(!temp_stack.empty()){ int temp = temp_stack.top(); temp_stack.pop(); _data.push(temp);	} } // --------------用队列模拟栈------------ void push(int x){ queue&lt;int&gt; temp_queue; temp_queue.push(x); while(!_data.empty()){ temp_queue.push(_data.front()); _data.pop();	} while(!temp_queue.empty()){ _data.push(temp.front()); temp_queue.pop(); } } ②计算器考虑使用栈的有穷自动状态机表示 堆 ①在乱序数组中寻找第K大的数 ​	|&mdash;&mdash;-若先排序后寻找，需要的时间复杂度为 N log N ，当N很大 K却很小时，所花时间远远大于预期。
+​	为了保证效率， 尽可能使得复杂度降为 N log K 。
+​	|&mdash;&mdash;-引入小根堆，保证这K个值为数组中最大，最后弹出栈顶元素，即为第K大元素
+​	（当传入元素大于栈顶元素时，弹出栈顶元素，将新元素加入后排序）int FindKthLargeElement(vector&lt;int&gt; &amp;nums, int k){ priority_queue&lt;int, vector&lt;int&gt;, greater&lt;int&gt;&gt; Q; // STL标准库中的小根堆  //priority_queue&lt;int, vector&lt;int&gt;, less&lt;int&gt;&gt; Q; // STL标准库中的大根堆(默认为大根堆) 	for(int i=0; i&lt;nums."/>
+
+    <meta property="og:title" content="" />
+<meta property="og:description" content="2.栈、队列、堆 栈与队列 ①栈和队列分别可通过制造两个相同结构模拟对方 ​	&mdash;&mdash;&mdash;&mdash;均在push（）函数内操作，其他不变
+//------------ 用栈模拟队列---------------- void push(x){ stack&lt;int&gt; temp_stack; while(!_data.empty()){ int temp = _data.top(); _data.pop(); temp_stack.push(temp); } temp_stack.push(x); while(!temp_stack.empty()){ int temp = temp_stack.top(); temp_stack.pop(); _data.push(temp);	} } // --------------用队列模拟栈------------ void push(int x){ queue&lt;int&gt; temp_queue; temp_queue.push(x); while(!_data.empty()){ temp_queue.push(_data.front()); _data.pop();	} while(!temp_queue.empty()){ _data.push(temp.front()); temp_queue.pop(); } } ②计算器考虑使用栈的有穷自动状态机表示 堆 ①在乱序数组中寻找第K大的数 ​	|&mdash;&mdash;-若先排序后寻找，需要的时间复杂度为 N log N ，当N很大 K却很小时，所花时间远远大于预期。
+​	为了保证效率， 尽可能使得复杂度降为 N log K 。
+​	|&mdash;&mdash;-引入小根堆，保证这K个值为数组中最大，最后弹出栈顶元素，即为第K大元素
+​	（当传入元素大于栈顶元素时，弹出栈顶元素，将新元素加入后排序）int FindKthLargeElement(vector&lt;int&gt; &amp;nums, int k){ priority_queue&lt;int, vector&lt;int&gt;, greater&lt;int&gt;&gt; Q; // STL标准库中的小根堆  //priority_queue&lt;int, vector&lt;int&gt;, less&lt;int&gt;&gt; Q; // STL标准库中的大根堆(默认为大根堆) 	for(int i=0; i&lt;nums." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://timingf.github.io/%E7%AC%94%E8%AE%B0/leetcode%E5%88%B7%E9%A2%98/%E8%A7%86%E9%A2%91%E5%AD%A6%E4%B9%A0/2.%E6%A0%88%E9%98%9F%E5%88%97%E5%A0%86/" />
+
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://timingf.github.io/"><img class="app-header-avatar" src="/avatar.jpg" alt="John Doe" /></a>
+      <h1>My New Hugo Site</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula turpis sit amet elit pretium.</p>
+      <div class="app-header-social">
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title"></h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Jan 1, 0001
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          2 min read
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <h1 id="2栈队列堆">2.栈、队列、堆</h1>
+<h3 id="栈与队列">栈与队列</h3>
+<h4 id="栈和队列分别可通过制造两个相同结构模拟对方">①栈和队列分别可通过制造两个相同结构模拟对方</h4>
+<p>​		&mdash;&mdash;&mdash;&mdash;均在push（）函数内操作，其他不变</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#75715e">//------------  用栈模拟队列----------------
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">push</span>(x){
+	stack<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> temp_stack;
+	<span style="color:#66d9ef">while</span>(<span style="color:#f92672">!</span>_data.empty()){
+		<span style="color:#66d9ef">int</span> temp <span style="color:#f92672">=</span> _data.top();
+		_data.pop();
+		temp_stack.push(temp);
+	}
+	temp_stack.push(x);
+	<span style="color:#66d9ef">while</span>(<span style="color:#f92672">!</span>temp_stack.empty()){
+		<span style="color:#66d9ef">int</span> temp <span style="color:#f92672">=</span> temp_stack.top();
+		temp_stack.pop();
+		_data.push(temp);	
+	}
+	
+}
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#75715e">// --------------用队列模拟栈------------
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">push</span>(<span style="color:#66d9ef">int</span> x){
+	queue<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> temp_queue;
+	temp_queue.push(x);
+	<span style="color:#66d9ef">while</span>(<span style="color:#f92672">!</span>_data.empty()){
+		temp_queue.push(_data.front());
+		_data.pop();	
+	}
+	<span style="color:#66d9ef">while</span>(<span style="color:#f92672">!</span>temp_queue.empty()){
+		_data.push(temp.front());
+		temp_queue.pop();
+	}
+}
+</code></pre></div><h4 id="计算器考虑使用栈的有穷自动状态机表示">②计算器考虑使用栈的有穷自动状态机表示</h4>
+<h3 id="堆">堆</h3>
+<h4 id="在乱序数组中寻找第k大的数">①在乱序数组中寻找第K大的数</h4>
+<p>​		|&mdash;&mdash;-若先排序后寻找，需要的时间复杂度为 <strong>N log N</strong>  ，当<strong>N</strong>很大 <strong>K</strong>却很小时，所花时间远远大于预期。</p>
+<p>​				  为了保证效率， 尽可能使得复杂度降为 <strong>N log K</strong> 。</p>
+<p>​				  |&mdash;&mdash;-<strong>引入小根堆，保证这K个值为数组中最大，最后弹出栈顶元素，即为第K大元素</strong></p>
+<p>​						<!-- raw HTML omitted -->（当传入元素大于栈顶元素时，弹出栈顶元素，将新元素加入后排序）<!-- raw HTML omitted --></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">FindKthLargeElement</span>(vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">&amp;</span>nums, <span style="color:#66d9ef">int</span> k){
+	priority_queue<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span>, vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span>, greater<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;&gt;</span> Q;  <span style="color:#75715e">// STL标准库中的小根堆
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">//priority_queue&lt;int, vector&lt;int&gt;, less&lt;int&gt;&gt; Q;  // STL标准库中的大根堆(默认为大根堆)
+</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>; i<span style="color:#f92672">&lt;</span>nums.size(); i<span style="color:#f92672">++</span>){
+		<span style="color:#66d9ef">if</span>(i <span style="color:#f92672">&lt;</span> k){      <span style="color:#75715e">//元素小于K个时直接入队无需比较 
+</span><span style="color:#75715e"></span>			Q.push(nums[i]);
+		}<span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span>(num[i] <span style="color:#f92672">&gt;</span> Q.top()){
+			Q.pop();
+			Q.push(nums[i]);
+		}
+	} 
+	<span style="color:#66d9ef">return</span> Q.top();
+}
+</code></pre></div><h4 id="寻找中位数">②寻找中位数</h4>
+<p>​	  |&mdash;&mdash;-动态维护一个<strong>最大堆</strong>和一个<strong>最小堆</strong>，<!-- raw HTML omitted -->保持最大堆的堆顶小于最小堆的堆顶。<!-- raw HTML omitted --></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MedianFinder</span> {
+<span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+    <span style="color:#75715e">/** initialize your data structure here. */</span>
+    MedianFinder() {}
+
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">addNum</span>(<span style="color:#66d9ef">int</span> num) {
+	<span style="color:#66d9ef">if</span>(big_heap.empty()){
+		big_heap.push(num);
+		<span style="color:#66d9ef">return</span>;
+	}
+	<span style="color:#66d9ef">if</span>(big_heap.size() <span style="color:#f92672">==</span> small_heap.size()){  <span style="color:#75715e">//当两边堆数量相等时 
+</span><span style="color:#75715e"></span>		<span style="color:#66d9ef">if</span>(num <span style="color:#f92672">&lt;</span> big_heap.top()){
+			big_heap.push(num);
+		} <span style="color:#66d9ef">else</span>{
+			small_heap.push(num);
+		}
+	}<span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span>(big_heap.size() <span style="color:#f92672">&gt;</span> small_heap.size()){  <span style="color:#75715e">//大根堆元素多于小根堆 
+</span><span style="color:#75715e"></span>		<span style="color:#66d9ef">if</span>(num <span style="color:#f92672">&gt;</span> big_heap.top()){  <span style="color:#75715e">//正好多余元素大于大根堆   将其放入小根堆 
+</span><span style="color:#75715e"></span>			small_heap.push(num);
+		}<span style="color:#66d9ef">else</span>{					<span style="color:#75715e">//此时只能将大根堆顶部放入小根堆，再将元素压入大根堆 
+</span><span style="color:#75715e"></span>			<span style="color:#66d9ef">int</span> temp_top <span style="color:#f92672">=</span> big_heap.top();
+			big_heap.pop();
+			big_heap.push(num);
+			small_heap.push(temp_top); 
+		} 
+	}<span style="color:#66d9ef">else</span>{    <span style="color:#75715e">//小根堆元素多于大根堆 
+</span><span style="color:#75715e"></span>		<span style="color:#66d9ef">if</span>(num <span style="color:#f92672">&lt;</span> small_heap.top()){  <span style="color:#75715e">//正好多余元素大于大根堆   将其放入小根堆 
+</span><span style="color:#75715e"></span>			big_heap.push(num);
+		}<span style="color:#66d9ef">else</span>{					<span style="color:#75715e">//此时只能将大根堆顶部放入小根堆，再将元素压入大根堆 
+</span><span style="color:#75715e"></span>			<span style="color:#66d9ef">int</span> temp_top <span style="color:#f92672">=</span> small_heap.top();
+			small_heap.pop();
+			small_heap.push(num);
+			big_heap.push(temp_top); 
+		} 			
+	} 
+} 
+
+<span style="color:#66d9ef">double</span> <span style="color:#a6e22e">findMedian</span>() {
+	<span style="color:#66d9ef">if</span>((big_heap.size() <span style="color:#f92672">+</span> small_heap.size()) <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>){
+		cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;big_heap.top()=&#34;</span> <span style="color:#f92672">&lt;&lt;</span> big_heap.top()<span style="color:#f92672">&lt;&lt;</span> endl;
+		cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;small_heap.top()=&#34;</span> <span style="color:#f92672">&lt;&lt;</span> small_heap.top()<span style="color:#f92672">&lt;&lt;</span> endl;
+		<span style="color:#66d9ef">return</span> (<span style="color:#66d9ef">double</span>)(big_heap.top() <span style="color:#f92672">+</span> small_heap.top()) <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>;
+		 		}<span style="color:#66d9ef">else</span>{
+ 			<span style="color:#66d9ef">return</span> big_heap.size() <span style="color:#f92672">&gt;</span> small_heap.size() <span style="color:#f92672">?</span> big_heap.top() <span style="color:#f92672">:</span> 	small_heap.top();
+		}	
+    }
+    
+<span style="color:#66d9ef">private</span><span style="color:#f92672">:</span>
+	priority_queue<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> big_heap;
+	priority_queue<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span>, vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span>, greater<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;&gt;</span> small_heap;
+};
+</code></pre></div>
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
