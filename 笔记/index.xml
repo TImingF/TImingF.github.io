@@ -5,7 +5,26 @@
     <link>https://timingf.github.io/%E7%AC%94%E8%AE%B0/</link>
     <description>Recent content in 笔记s on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://timingf.github.io/%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Mon, 23 Nov 2020 08:50:07 +0800</lastBuildDate><atom:link href="https://timingf.github.io/%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>K近邻算法</title>
+      <link>https://timingf.github.io/%E7%AC%94%E8%AE%B0/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/k-nn-k%E8%BF%91%E9%82%BB%E7%AE%97%E6%B3%95/</link>
+      <pubDate>Mon, 23 Nov 2020 08:50:07 +0800</pubDate>
+      
+      <guid>https://timingf.github.io/%E7%AC%94%E8%AE%B0/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/k-nn-k%E8%BF%91%E9%82%BB%E7%AE%97%E6%B3%95/</guid>
+      <description>K近邻算法 1.简介 ​	KNN工作原理：存在一个样本数据集合，也称作为训练样本集，并且样本集中每个数据都存在标签，即我们知道样本集中每一个数据与所属分类的对应关系。输入没有标签的新数据后，将新的数据的每个特征与样本集中数据对应的特征进行比较，然后算法提取样本最相似数据(最近邻)的分类标签。一般来说，我们只选择样本数据集中前k个最相似的数据，这就是k-近邻算法中k的出处，通常k是不大于20的整数。最后，选择k个最相似数据中出现次数最多的分类，作为新数据的分类。
+优点：精度高，对异常值不敏感，无数据输入假定。
+缺点：计算复杂度高，空间复杂度高。
+使用数据范围：数值型，标称型。
+   电影名称 打斗镜头 接吻镜头      电影1 1 101 爱情片   电影2 5 89 爱情片   电影3 108 5 动作片   电影4 115 8 动作片    2.距离度量 设特征空间 X 是n维实数向量空间Rn, $$ x_{i},x_{j} \in \chi, x_{i}=(x_{i}^{(1)},x_{i}^{(2)},…,x_{i}^{(n)})^{T},x_{j}=(x_{i}^{(1)},x_{i}^{(2)},…,x_{i}^{(n)})^{T},x_i,x_j的L_P距离定义为： $$
+$$ L_{p}(x_{i},x_{j}) = (\sum_{l=i}^{n}|x_{i}^{(l)}-x_{j}^{(l)}|^p)^{1/p} $$
+p=1时称为曼哈顿距离(Manhattan distance);
+p=2时称为欧式距离(Euclidean distance)；
+p=∞时L为各坐标距离最大值
+我们可以从散点图大致推断，这个红色圆点标记的电影可能属于动作片，因为距离已知的那两个动作片的圆点更近。k-近邻算法用什么方法进行判断呢？没错，就是距离度量。这个电影分类的例子有2个特征，也就是在2维实数向量空间，可以使用我们高中学过的两点距离公式计算距离 $$ |AB| = \sqrt{(x_{1}-x_{2})^{2}+(y_{1}-y_{2})^{2}} $$ 但仅仅只是计算出最小距离是不够的，这只能算是最近邻算法，而非K-近邻算法</description>
+    </item>
+    
     <item>
       <title></title>
       <link>https://timingf.github.io/%E7%AC%94%E8%AE%B0/leetcode%E5%88%B7%E9%A2%98/%E6%9C%80%E9%95%BF%E6%97%A0%E9%87%8D%E5%A4%8D%E5%AD%90%E4%B8%B2/</link>
@@ -146,24 +165,6 @@ Roberts</description>
       
       <guid>https://timingf.github.io/%E7%AC%94%E8%AE%B0/%E6%9C%AA%E5%91%BD%E5%90%8D/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://timingf.github.io/%E7%AC%94%E8%AE%B0/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/k-nn-k%E8%BF%91%E9%82%BB%E7%AE%97%E6%B3%95/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://timingf.github.io/%E7%AC%94%E8%AE%B0/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/k-nn-k%E8%BF%91%E9%82%BB%E7%AE%97%E6%B3%95/</guid>
-      <description>K近邻算法 1.简介 ​	KNN工作原理：存在一个样本数据集合，也称作为训练样本集，并且样本集中每个数据都存在标签，即我们知道样本集中每一个数据与所属分类的对应关系。输入没有标签的新数据后，将新的数据的每个特征与样本集中数据对应的特征进行比较，然后算法提取样本最相似数据(最近邻)的分类标签。一般来说，我们只选择样本数据集中前k个最相似的数据，这就是k-近邻算法中k的出处，通常k是不大于20的整数。最后，选择k个最相似数据中出现次数最多的分类，作为新数据的分类。
-优点：精度高，对异常值不敏感，无数据输入假定。
-缺点：计算复杂度高，空间复杂度高。
-使用数据范围：数值型，标称型。
-   电影名称 打斗镜头 接吻镜头      电影1 1 101 爱情片   电影2 5 89 爱情片   电影3 108 5 动作片   电影4 115 8 动作片    2.距离度量 设特征空间 X 是n维实数向量空间Rn, $$ x_{i},x_{j} \in \chi, x_{i}=(x_{i}^{(1)},x_{i}^{(2)},…,x_{i}^{(n)})^{T},x_{j}=(x_{i}^{(1)},x_{i}^{(2)},…,x_{i}^{(n)})^{T},x_i,x_j的L_P距离定义为： $$
-$$ L_{p}(x_{i},x_{j}) = (\sum_{l=i}^{n}|x_{i}^{(l)}-x_{j}^{(l)}|^p)^{1/p} $$
-p=1时称为曼哈顿距离(Manhattan distance);
-p=2时称为欧式距离(Euclidean distance)；
-p=∞时L为各坐标距离最大值
-我们可以从散点图大致推断，这个红色圆点标记的电影可能属于动作片，因为距离已知的那两个动作片的圆点更近。k-近邻算法用什么方法进行判断呢？没错，就是距离度量。这个电影分类的例子有2个特征，也就是在2维实数向量空间，可以使用我们高中学过的两点距离公式计算距离 $$ |AB| = \sqrt{(x_{1}-x_{2})^{2}+(y_{1}-y_{2})^{2}} $$ 但仅仅只是计算出最小距离是不够的，这只能算是最近邻算法，而非K-近邻算法</description>
     </item>
     
     <item>
